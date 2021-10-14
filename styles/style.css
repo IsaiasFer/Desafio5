@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "game_of_squidsregular";
+  src: url("gameofsquids-1gmvl-webfont.woff2") format("woff2"),
+    url("gameofsquids-1gmvl-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+    font-family: "game_of_squidsregular";
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images6.alphacoders.com/117/thumb-1920-1177227.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tarjeta {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10% 0;
+  background: #359c8a;
+  padding: 1em 1em 2em;
+  border-radius: 1em;
+  border: 2px solid #d44157;
+  box-shadow: 0px 0px 27px 10px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 0px 0px 27px 10px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 0px 0px 27px 10px rgba(0, 0, 0, 0.69);
+}
+a {
+  color: #d44157;
+  text-decoration: none;
+}
+.pic {
+  border-radius: 50%;
+  width: 40%;
+  border: 3px solid #d44157;
+  margin: 0 0.5em;
+}
+.bandera {
+  height: 1em;
+  width: 1em;
+}
+h1 {
+  text-align: center;
+}
+h6 {
+  margin-bottom: 0;
+}
+h5 {
+  margin-top: 0;
+}
+span {
+  color: #d44157;
+  font-size: 1.5em;
+}
+.simbols {
+  font-size: 3em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+button{
+    font-family: "game_of_squidsregular";
+    color: black;
+    background: #359c8a;
+    border: 2px solid #d44157;
+    padding: 1em;
+    border-radius: 1em;
+    transition: .3s;
+    cursor: pointer;
+}
+button:hover{
+    font-size: 1em;
+}
+.firma{
+    font-size: .7em;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    color: black;
+    background: white;
+    padding: 1em;
+    border-radius: 5px;
+}
