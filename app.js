@@ -49,13 +49,21 @@ function crearTarjeta(persona) {
       default:
           break;
   }
+  let deuda=Math.floor(Math.random()*500)*1000000;
   let numeroRandom = Math.floor(Math.random() * 456);
   let body = document.getElementById("main");
+
+  function separator(numb) {
+    var str = numb.toString().split(".");
+    str[0] = str[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return str.join(".");
+}
+
   body.innerHTML = `
             <section class="tarjeta">
               <h1>Participante Nro ${numeroRandom}: </br> <span>${persona.name.first} ${persona.name.last}</span></h1>
               <span class="simbols">△<img class="pic" src="${persona.picture.medium}" alt="">✕</span>
-              <h4>Deuda: $40.000.000 USD</h4>
+              <h4 id="deuda">Deuda: $${separator(deuda)} USD</h4>
               <hr>
               <a href="${persona.picture.medium}">${persona.email}</a>
               <h6>Localidad:</h6>
