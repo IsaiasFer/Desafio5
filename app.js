@@ -1,11 +1,11 @@
 function playerGenerate() {
-  fetch("https://randomuser.me/api/?nat=us,dk,fr,gb") //nos da una respuesta
-    .then(function (respuesta) {
-      return respuesta.json(); //convertimos la respuesta en JSON valido
+  fetch("https://randomuser.me/api/?nat=us,dk,fr,gb") 
+    .then(function (answerLoco) {
+      return answerLoco.json(); 
     })
-    .then(function (myJson) {
-      console.log(myJson.results); //mostramos por consola el objeto
-      crearTarjeta(myJson.results[0]);
+    .then(function (JsonATR) {
+      console.log(JsonATR.results); 
+      crearTarjeta(JsonATR.results[0]);
     });
 }
 
